@@ -30,7 +30,7 @@
 
         ![image-20220328140210458](https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328140210458.png)
 
-* **在GitHub中添加共有密钥**
+* **在GitHub中添加公有密钥**
 
     在GitHub中打开一个新建的仓库，找到配置ssh的位置，你会看到要求你添加共有密钥的提示：
 
@@ -62,27 +62,27 @@
 
 ### 1. 先本地，后GitHub
 
-* 新建一个本地仓库
+* **新建一个本地仓库**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328203037683.png" alt="image-20220328203037683" style="zoom:50%;" />
 
-* 使本地仓库受Git管理
+* **使本地仓库受Git管理**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328203105262.png" alt="image-20220328203105262" style="zoom:50%;" />
 
-* 向仓库中添加文件或修改
+* **向仓库中添加文件或修改**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328203349858.png" alt="image-20220328203349858" style="zoom:50%;" />
 
-* 提交修改到暂存区
+* **提交修改到暂存区**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328203530642.png" alt="image-20220328203530642" style="zoom:50%;" />
 
-* 提交到本地仓库此处采取提交简单修改描述的方式）
+* **提交到本地仓库（此处采取提交简单修改描述的方式）**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328203829610.png" alt="image-20220328203829610" style="zoom:50%;" />
 
-* 推送到远程仓库（此处指的就是GitHub）
+* **推送到远程仓库（此处指的是GitHub）**
 
     1. 在GitHub上创建一个同名仓库作为本地仓库的远程仓库（最好不要勾选with a README）
 
@@ -108,27 +108,27 @@
 
 ### 2. 先GitHub，后本地
 
-* 在新建的仓库后复制仓库的ssh链接：
+* **在新建的仓库后复制仓库的ssh链接**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328145225849.png" alt="image-20220328145225849" style="zoom: 50%;" />
 
-* 在Git bash命令行中切换到想要保存仓库的路径下，使用`git clone`命令克隆这个仓库到本地：
+* **在Git bash命令行中切换到想要保存仓库的路径下，使用`git clone`命令克隆这个仓库到本地**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328151124958.png" alt="image-20220328151124958" style="zoom:50%;" />
 
-* 在路径下查看克隆下来的仓库：
+* **在路径下查看克隆下来的仓库**
 
     ![image-20220328151249440](https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328151249440.png)
 
-* 切换到仓库路径下，用`git status`查看仓库状态：
+* **切换到仓库路径下，用`git status`查看仓库状态**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328151520986.png" alt="image-20220328151520986" style="zoom:50%;" />
 
-* 在仓库路径下用vim新建一个hello.c文件，并再次查看仓库状态可以看到仓库存在**Untracked files**：
+* **在仓库路径下用vim新建一个hello.c文件，并再次查看仓库状态可以看到仓库存在Untracked files**
 
     <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328151946687.png" alt="image-20220328151946687" style="zoom:50%;" />
 
-* 提交相关修改（此时的修改是新建的文件hello.c）到仓库Common-Algorithms中：
+* **提交相关修改（此时的修改是新建的文件hello.c）到仓库Common-Algorithms中**
 
     1. `gir add`——提交到暂存区
 
