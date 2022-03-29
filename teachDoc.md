@@ -154,4 +154,24 @@
 
         ![image-20220328165550722](https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328165550722.png)
 
-        
+
+
+
+### 3. 用到的Git命令小结
+
+* `git init`
+* `git add`
+* `git commit`
+* `git status`
+* `git remote add`
+* `git push`
+* `git log`
+
+
+
+### 4. 其他常用Git命令
+
+* `git branch`
+* `git checkout`
+* `git rm`
+* `git reset`
