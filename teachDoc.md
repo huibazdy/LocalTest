@@ -175,3 +175,23 @@
 * `git checkout`
 * `git rm`
 * `git reset`
+
+
+
+### 5. 常见问题
+
+在关联GitHub仓库时，提示origin已存在：
+
+<img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220402170240693.png" alt="image-20220402170240693" style="zoom:50%;" />
+
+1. 先删除远程Git仓库
+
+    <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220402170348802.png" alt="image-20220402170348802" style="zoom:50%;" />
+
+2. 再添加远程Git仓库
+
+    <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220402170455749.png" alt="image-20220402170455749" style="zoom:50%;" />
+
+3. 再次提交修改即可
+
+    <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220402170541814.png" alt="image-20220402170541814" style="zoom:50%;" />
