@@ -88,11 +88,11 @@
 
         <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328204531623.png" alt="image-20220328204531623" style="zoom:33%;" />
 
-    2. 添加远程仓库——`git remote add`
+    2. 添加远程仓库——`git remote add origin`
 
         <img src="https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328205054919.png" alt="image-20220328205054919" style="zoom:50%;" />
 
-    3. 推送至远程仓库——`git push`
+    3. 推送至远程仓库——`git push -u origin master`
 
         第一次由于远程仓库为空，需要在`git push`后加上`-u`参数。其他分支也需要加上这个参数。
 
