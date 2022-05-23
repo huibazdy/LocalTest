@@ -48,7 +48,7 @@
 
 * **完成上述设置后，本地计算机就可以利用私钥与GitHub进行认证通信了，现在进行验证**：
 
-    键入命令`sst -T git@github.com`
+    键入命令`ssh -T git@github.com`
 
     ![image-20220328144212818](https://gitee.com/huiba450zdy/typora-picture/raw/master/img/image-20220328144212818.png)
 
