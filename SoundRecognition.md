@@ -71,13 +71,32 @@
 
 * 1962，Voiceprint identification，use spectrogram，human reading not algorithm
 
+* Earliest Algorithm：**Pattern Matching**
+
+    收到人工阅读法的启发，但不再采用人工比对时域频谱图，而是**模式匹配算法**。
+
+    > 可以将两个声纹信息的时域频谱图看作两个矩阵A和B（因为横纵坐标分别是时间和频率）。
+    >
+    > 核心矛盾是得到两个矩阵的差异。
+    >
+    > 方法一：
+    >
+    > 对两个矩阵求差值（依然得到一个矩阵）进行**求模**运算，即：$\begin{Vmatrix}{A-B}\end{Vmatrix}_2$
+    >
+    > 方法二：
+    >
+    > 求两个矩阵的**相关性**，即：$corr(A,B)$。相关性越接近于1，说明两个矩阵越相似，反之越接近0越不相似。
+    >
+    > 模式匹配算法的前提条件是**文本相同**，这样才能保证矩阵是同等规模的，才能进行运算。
+
 
 
 ### 1.4 From waveform(oscillography) to spectrogram
 
 对声纹研究的手段，从示波器的波形图演变为时域频谱图。
 
-
+* 阶段一：示波器波形图
+* 阶段二：时域频谱图（人工但非算法）
 
 
 
