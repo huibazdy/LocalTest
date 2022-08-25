@@ -73,7 +73,7 @@
 
 * Earliest Algorithm：**Pattern Matching**
 
-    收到人工阅读法的启发，但不再采用人工比对时域频谱图，而是**模式匹配算法**。
+    收到人工阅读法的启发，但不再采用人工比对时域频谱图，而是**模式匹配算法**。（1963年）
 
     > 可以将两个声纹信息的时域频谱图看作两个矩阵A和B（因为横纵坐标分别是时间和频率）。
     >
@@ -88,6 +88,35 @@
     > 求两个矩阵的**相关性**，即：$corr(A,B)$。相关性越接近于1，说明两个矩阵越相似，反之越接近0越不相似。
     >
     > 模式匹配算法的前提条件是**文本相同**，这样才能保证矩阵是同等规模的，才能进行运算。
+    >
+    > 该方法具有几个缺陷：1）依赖文本；2）必须对齐（说话速度）；3）受情绪、环境、硬件影响大
+
+* **Statistical Method**
+
+    通过分段时域频谱图，计算平均值或者标准差得到一个向量，通过比较两个向量来比较频谱
+
+* **Gaussian Mixture Models（GMM）（1995-2006）**
+
+    高斯混合模型是在深度学习出现之前最流行的统计学模型。应用有：计算机视觉（computer vision）、语音识别（speech recognition）、声纹识别（speaker recognition）等。领军人物：Douglas Reynolds from MIT，US。
+
+    > * 高斯分布很简单
+    > * GMM由多个高斯分布函数组合（叠加）而成，从而可以拟合很多复杂的概率分布
+    >
+    > 在声纹识别领域，在GMM的基础上演化出了两个最知名的方法：
+    >
+    > 1. **GMM-UBM**： GMM universal background model（通用背景模型）
+    > 2. **GMM-SVM**：GMM support vector machine（支持向量机）
+
+* **Factor Analysis（2007-2013）**
+
+    领军人物：Patrick kenny from CRIM，Canada。
+
+    最著名的方法有两种：
+
+    1. Joint Factor Analysis（JFA）联合因子分析
+    2. i-vector
+
+* **Deep Learning（2014）**
 
 
 
@@ -99,6 +128,29 @@
 * 阶段二：时域频谱图（人工但非算法）
 
 
+
+
+
+### 1.5 Summary
+
+语音识别技术进入生活，从Siri开始
+
+![image-20220825150336687](https://raw.githubusercontent.com/huibazdy/TyporaPicture/main/202208251503983.png)
+
+语音助手极其配套产品成为必争之地
+
+![image-20220825150253414](https://raw.githubusercontent.com/huibazdy/TyporaPicture/main/202208251502766.png)
+
+国内语音识别独角兽
+
+![image-20220825150151385](https://raw.githubusercontent.com/huibazdy/TyporaPicture/main/202208251501720.png)
+
+
+
+挑战：
+
+* 安全性
+* 个性化
 
 ## 2. Fundamentals of Audio Processing
 
