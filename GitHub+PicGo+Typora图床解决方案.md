@@ -35,3 +35,12 @@
 
 
 <img src="https://raw.githubusercontent.com/huibazdy/TyporaPicture/main/202207071147230.png" style="zoom: 50%;" />
+
+
+
+## 五、图片加水印
+
+[参考资料](https://blog.csdn.net/hyh17808770899/article/details/122074131)
+
+1. 在PicGo中安装`watermark`插件
+2. 配置插件
